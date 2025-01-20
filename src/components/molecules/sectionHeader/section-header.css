@@ -1,0 +1,23 @@
+.section-header-container {
+  font-size: 1.5rem;
+  padding: 2rem;
+  text-align: start;
+  max-width: 100%;
+}
+
+.primary-heading {
+  font-weight: 300;
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
+.subtitle {
+  color: #d6d6d6;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 0.65rem;
+}

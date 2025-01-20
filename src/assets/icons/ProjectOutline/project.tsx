@@ -21,7 +21,7 @@ const ProjectOutline: React.FC<ProjectOutlineProps> = ({
     >
       <g
         fill="none"
-        stroke="#FFF"
+        stroke="#9B9B9B"
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth="4"

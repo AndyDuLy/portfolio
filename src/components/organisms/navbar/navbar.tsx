@@ -1,6 +1,6 @@
 import "./navbar.css";
 import React from "react";
-import Canvas from "../../molecules/canvas";
+import Canvas from "../../atoms/canvas";
 import Button from "../../atoms/button";
 import HomeOutline from "../../../assets/icons/HomeOutline";
 import WorkOutline from "../../../assets/icons/WorkOutline";
@@ -20,13 +20,14 @@ const NavbarIcons = [
 
 const Navbar: React.FC<NavbarProps> = ({ children }) => {
   return (
-    <Canvas>
-      {NavbarIcons.map(({ id, component, label }) => (
-        <Button key={id} icon={component} aria-label={label} />
-      ))}
-
-      {children}
-    </Canvas>
+    <div className="navbar-container">
+      <Canvas variant="primary">
+        {NavbarIcons.map(({ id, component, label }) => (
+          <Button key={id} icon={component} aria-label={label} />
+        ))}
+        {children}
+      </Canvas>
+    </div>
   );
 };
 

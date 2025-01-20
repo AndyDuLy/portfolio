@@ -1,0 +1,17 @@
+.section-card-container {
+  background-color: #373737;
+  border-radius: 12px;
+  text-align: start;
+  margin: 1rem;
+  max-width: 95%;
+  padding: 1rem;
+}
+
+.section-card-title {
+  font-size: 1rem;
+}
+
+.section-card-subtitle {
+  color: #d6d6d6;
+  font-size: 0.75rem;
+}
