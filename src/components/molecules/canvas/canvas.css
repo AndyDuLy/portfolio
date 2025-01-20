@@ -1,0 +1,10 @@
+.canvas-container {
+  max-width: clamp(60vw, 80%, 100vw);
+  min-width: 60vw;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: #212121;
+  border: 1px solid #272727;
+  border-radius: 18px;
+  color: #ffffffe6; /* E6 == 90% opacity */
+}
