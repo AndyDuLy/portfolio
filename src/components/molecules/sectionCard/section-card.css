@@ -1,10 +1,20 @@
 .section-card-container {
   background-color: #373737;
   border-radius: 12px;
+  display: flex;
   text-align: start;
   margin: 1rem;
   max-width: 95%;
   padding: 1rem;
+  align-items: center;
+}
+
+.section-card-icon {
+  margin-right: 3%;
+}
+
+.section-card-right {
+  margin-left: auto;
 }
 
 .section-card-title {

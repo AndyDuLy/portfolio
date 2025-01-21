@@ -2,10 +2,12 @@ import "./navbar.css";
 import React from "react";
 import Canvas from "../../atoms/canvas";
 import Button from "../../atoms/button";
-import HomeOutline from "../../../assets/icons/HomeOutline";
-import WorkOutline from "../../../assets/icons/WorkOutline";
-import ProjectOutline from "../../../assets/icons/ProjectOutline";
-import ContactOutline from "../../../assets/icons/ContactOutline";
+import {
+  HomeOutline,
+  WorkOutline,
+  ProjectOutline,
+  ContactOutline,
+} from "../../../assets/icons/Navbar/navbar";
 
 interface NavbarProps {
   children?: React.ReactNode;
