@@ -14,18 +14,18 @@ interface NavbarProps {
 }
 
 const NavbarIcons = [
-  { id: 1, component: <HomeOutline />, label: "Home" },
-  { id: 2, component: <WorkOutline />, label: "Work" },
-  { id: 3, component: <ProjectOutline />, label: "Project" },
-  { id: 4, component: <ContactOutline />, label: "Contact" },
+  { id: 1, component: <HomeOutline />, label: "Home", link: "#" },
+  { id: 2, component: <WorkOutline />, label: "Work", link: "#work" },
+  { id: 3, component: <ProjectOutline />, label: "Project", link: "#projects" },
+  { id: 4, component: <ContactOutline />, label: "Contact", link: "#contact" },
 ];
 
 const Navbar: React.FC<NavbarProps> = ({ children }) => {
   return (
     <div className="navbar-container">
       <Canvas variant="primary">
-        {NavbarIcons.map(({ id, component, label }) => (
-          <Button key={id} icon={component} aria-label={label} />
+        {NavbarIcons.map(({ id, component, label, link }) => (
+          <Button link={link} key={id} icon={component} aria-label={label} />
         ))}
         {children}
       </Canvas>

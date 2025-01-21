@@ -7,6 +7,7 @@ interface SectionCardProps {
   title: string;
   subtitle: string;
   date: string;
+  link: string;
 }
 
 const SectionCard: React.FC<SectionCardProps> = ({
@@ -14,6 +15,7 @@ const SectionCard: React.FC<SectionCardProps> = ({
   title,
   subtitle,
   date,
+  link,
 }) => {
   return (
     <div className="section-card-container">
@@ -25,7 +27,7 @@ const SectionCard: React.FC<SectionCardProps> = ({
       </span>
 
       <span className="section-card-right">
-        <Button> {date} </Button>
+        <Button link={link}> {date} </Button>
       </span>
     </div>
   );
