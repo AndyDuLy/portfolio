@@ -1,4 +1,4 @@
-import "./landing.css";
+import "./projects.css";
 import React from "react";
 import Canvas from "../../atoms/canvas";
 import SectionHeader from "../../molecules/sectionHeader";

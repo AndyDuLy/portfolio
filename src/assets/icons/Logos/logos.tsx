@@ -147,3 +147,101 @@ export const RBCOutline: React.FC<CompanyLogoProps> = ({
     </svg>
   );
 };
+
+export const GithubOutline: React.FC<CompanyLogoProps> = ({
+  props,
+  width,
+  height,
+}) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      width={width ?? "24px"}
+      height={height ?? "24px"}
+      {...props}
+    >
+      <path
+        fill="currentColor"
+        fillRule="evenodd"
+        d="M12.006 2a9.85 9.85 0 0 0-6.484 2.44a10.32 10.32 0 0 0-3.393 6.17a10.48 10.48 0 0 0 1.317 6.955a10.05 10.05 0 0 0 5.4 4.418c.504.095.683-.223.683-.494c0-.245-.01-1.052-.014-1.908c-2.78.62-3.366-1.21-3.366-1.21a2.7 2.7 0 0 0-1.11-1.5c-.907-.637.07-.621.07-.621c.317.044.62.163.885.346c.266.183.487.426.647.71c.135.253.318.476.538.655a2.08 2.08 0 0 0 2.37.196c.045-.52.27-1.006.635-1.37c-2.219-.259-4.554-1.138-4.554-5.07a4.02 4.02 0 0 1 1.031-2.75a3.77 3.77 0 0 1 .096-2.713s.839-.275 2.749 1.05a9.26 9.26 0 0 1 5.004 0c1.906-1.325 2.74-1.05 2.74-1.05c.37.858.406 1.828.101 2.713a4.02 4.02 0 0 1 1.029 2.75c0 3.939-2.339 4.805-4.564 5.058a2.47 2.47 0 0 1 .679 1.897c0 1.372-.012 2.477-.012 2.814c0 .272.18.592.687.492a10.05 10.05 0 0 0 5.388-4.421a10.47 10.47 0 0 0 1.313-6.948a10.32 10.32 0 0 0-3.39-6.165A9.85 9.85 0 0 0 12.007 2Z"
+        clipRule="evenodd"
+      ></path>
+    </svg>
+  );
+};
+
+export const LinkedinOutline: React.FC<CompanyLogoProps> = ({
+  props,
+  width,
+  height,
+}) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      width={width ?? "24px"}
+      height={height ?? "24px"}
+      {...props}
+    >
+      <g fill="currentColor">
+        <path
+          fillRule="evenodd"
+          d="M12.51 8.796v1.697a3.74 3.74 0 0 1 3.288-1.684c3.455 0 4.202 2.16 4.202 4.97V19.5h-3.2v-5.072c0-1.21-.244-2.766-2.128-2.766c-1.827 0-2.139 1.317-2.139 2.676V19.5h-3.19V8.796h3.168ZM7.2 6.106a1.61 1.61 0 0 1-.988 1.483a1.595 1.595 0 0 1-1.743-.348A1.607 1.607 0 0 1 5.6 4.5a1.6 1.6 0 0 1 1.6 1.606"
+          clipRule="evenodd"
+        ></path>
+        <path d="M7.2 8.809H4V19.5h3.2z"></path>
+      </g>
+    </svg>
+  );
+};
+
+export const ResumeOutline: React.FC<CompanyLogoProps> = ({
+  props,
+  width,
+  height,
+}) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      width={width ?? "24px"}
+      height={height ?? "24px"}
+      {...props}
+    >
+      <g className="document-texts-outline">
+        <g
+          fill="currentColor"
+          fillRule="evenodd"
+          className="Vector"
+          clipRule="evenodd"
+        >
+          <path d="M3 9.612c0-1.563 1.333-2.72 2.837-2.72H9v2H5.837c-.525 0-.837.383-.837.72v9.56c0 .337.312.72.837.72h6.326c.525 0 .837-.383.837-.72v-.288h2v.287c0 1.563-1.333 2.72-2.837 2.72H5.837C4.333 21.892 3 20.735 3 19.172z"></path>
+          <path d="M17.2 19h-5.4C9.643 19 8 17.214 8 15.143V5.857C8 3.787 9.643 2 11.8 2h3.022c.867 0 1.703.322 2.347.903l2.675 2.415A3.5 3.5 0 0 1 21 7.918v7.225C21 17.213 19.357 19 17.2 19m0-2h-5.4c-.994 0-1.8-.831-1.8-1.857V5.857C10 4.831 10.806 4 11.8 4h3.022c.372 0 .73.138 1.007.387l2.675 2.416A1.5 1.5 0 0 1 19 7.918v7.225C19 16.169 18.194 17 17.2 17"></path>
+          <path d="M11 11a1 1 0 0 1 1-1h4a1 1 0 1 1 0 2h-4a1 1 0 0 1-1-1m0 4a1 1 0 0 1 1-1h2.5a1 1 0 1 1 0 2H12a1 1 0 0 1-1-1m4-12a1 1 0 0 1 1 1v1.997C16 6.551 16.449 7 17.003 7H19a1 1 0 1 1 0 2h-1.997A3.003 3.003 0 0 1 14 5.997V4a1 1 0 0 1 1-1"></path>
+        </g>
+      </g>
+    </svg>
+  );
+};
+
+export const MediumOutline: React.FC<CompanyLogoProps> = ({
+  props,
+  width,
+  height,
+}) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 256 256"
+      width={width ?? "24px"}
+      height={height ?? "24px"}
+      {...props}
+    >
+      <path
+        fill="currentColor"
+        d="M52 136a4 4 0 0 1-4 4H24a4 4 0 0 1 0-8h12V60H24a4 4 0 0 1 0-8h16a4 4 0 0 1 3.39 1.87L80 112.45l36.61-58.57A4 4 0 0 1 120 52h16a4 4 0 0 1 0 8h-12v72h12a4 4 0 0 1 0 8h-24a4 4 0 0 1 0-8h4V70l-32.61 52.12a4 4 0 0 1-6.78 0L44 70v62h4a4 4 0 0 1 4 4m116-28h64a4 4 0 0 0 0-8h-64a4 4 0 0 0 0 8m64 24h-64a4 4 0 0 0 0 8h64a4 4 0 0 0 0-8m0 32H80a4 4 0 0 0 0 8h152a4 4 0 0 0 0-8m0 32H80a4 4 0 0 0 0 8h152a4 4 0 0 0 0-8"
+      ></path>
+    </svg>
+  );
+};

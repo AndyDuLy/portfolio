@@ -3,15 +3,16 @@ import React from "react";
 
 interface CanvasProps {
   children?: React.ReactNode;
-  variant?: string;
+  variant: string;
 }
 
 const Canvas: React.FC<CanvasProps> = ({ children, variant }) => {
-  return variant === "primary" ? (
-    <div className="canvas-container">{children}</div>
-  ) : (
-    <div className="canvas-container-secondary">{children}</div>
-  );
+  const variantClasses: Record<string, string> = {
+    primary: "canvas-container",
+    secondary: "canvas-container-secondary",
+  };
+
+  return <div className={variantClasses[variant] || "navbar"}>{children}</div>;
 };
 
 export default Canvas;
