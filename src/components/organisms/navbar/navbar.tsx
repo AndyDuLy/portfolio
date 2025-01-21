@@ -17,7 +17,12 @@ const NavbarIcons = [
   { id: 1, component: <HomeOutline />, label: "Home", link: "#home" },
   { id: 2, component: <WorkOutline />, label: "Work", link: "#work" },
   { id: 3, component: <ProjectOutline />, label: "Project", link: "#projects" },
-  { id: 4, component: <ContactOutline />, label: "Contact", link: "#contact" },
+  {
+    id: 4,
+    component: <ContactOutline />,
+    label: "Contact",
+    link: "mailto:aduly.fr@gmail.com",
+  },
 ];
 
 const Navbar: React.FC<NavbarProps> = ({ children }) => {
