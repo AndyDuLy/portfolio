@@ -1,0 +1,33 @@
+{
+  "icons": [
+    {
+      "id": 1,
+      "component": "GithubOutline",
+      "label": "Github",
+      "link": "https://github.com/andyduly"
+    },
+    {
+      "id": 2,
+      "component": "LinkedinOutline",
+      "label": "LinkedIn",
+      "link": "https://www.linkedin.com/in/andyduly/"
+    },
+    {
+      "id": 3,
+      "component": "ResumeOutline",
+      "label": "Resume",
+      "link": "https://drive.google.com/drive/folders/1apDueoMyihJ-xJa9baEI26n9imZ8QB8y?usp=drive_link"
+    },
+    {
+      "id": 4,
+      "component": "MediumOutline",
+      "label": "Medium",
+      "link": "https://medium.com/@aandy.duly"
+    }
+  ],
+  "landing-greeting": "Hey! 👋",
+  "landing-title": "I'm Andy Du Ly",
+  "landing-subtitle": "and I'm an EMEA/France based Software Engineer.",
+  "cta-1": "Have an idea you want to turn into a reality? Let's ",
+  "cta-2": "chat."
+}

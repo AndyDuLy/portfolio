@@ -9,60 +9,52 @@ import Canvas from "../../atoms/canvas";
 import SectionHeader from "../../molecules/sectionHeader";
 import "./about.css";
 import React from "react";
+import AboutDataJSON from "../../../assets/data/about.json";
+
+const AboutIconMap: Record<string, React.ElementType> = {
+  GithubOutline,
+  LinkedinOutline,
+  MediumOutline,
+  ResumeOutline,
+};
 
 interface AboutProps {
   children?: React.ReactNode;
 }
-
-const SocialIcons = [
-  {
-    id: 1,
-    component: <GithubOutline />,
-    label: "Github",
-    link: "https://github.com/andyduly",
-  },
-  {
-    id: 2,
-    component: <LinkedinOutline />,
-    label: "LinkedIn",
-    link: "https://www.linkedin.com/in/andyduly/",
-  },
-  {
-    id: 3,
-    component: <ResumeOutline />,
-    label: "Resume",
-    link: "https://drive.google.com/drive/folders/1apDueoMyihJ-xJa9baEI26n9imZ8QB8y?usp=drive_link",
-  },
-  {
-    id: 4,
-    component: <MediumOutline />,
-    label: "Medium",
-    link: "https://medium.com/@aandy.duly",
-  },
-];
 
 const About: React.FC<AboutProps> = ({ children }) => {
   return (
     <div id="home">
       <Canvas variant="primary">
         <SectionHeader
-          primaryHeading={"Hey! 👋"}
-          title={"I'm Andy Du Ly"}
-          subtitle={`and I'm an EMEA/France based Software Engineer. Welcome to my website :)`}
+          primaryHeading={AboutDataJSON["landing-greeting"]}
+          title={AboutDataJSON["landing-title"]}
+          subtitle={AboutDataJSON["landing-subtitle"]}
         />
 
         <Canvas variant="secondary">
           <div className="portfolio-links">
-            {SocialIcons.map(({ id, component, label, link }) => (
-              <Button
-                link={link}
-                key={id}
-                icon={component}
-                aria-label={label}
-              />
-            ))}
+            {AboutDataJSON.icons.map(({ id, component, label, link }) => {
+              const IconReference = AboutIconMap[component];
+              return (
+                <Button
+                  link={link}
+                  key={id}
+                  icon={IconReference ? <IconReference /> : null}
+                  aria-label={label}
+                />
+              );
+            })}
           </div>
         </Canvas>
+
+        <div className="cta-text">
+          {AboutDataJSON["cta-1"]}
+
+          <a href="mailto:aduly.fr@gmail.com" target="_blank">
+            {AboutDataJSON["cta-2"]}
+          </a>
+        </div>
       </Canvas>
 
       {children}

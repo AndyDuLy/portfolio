@@ -1,0 +1,43 @@
+{
+  "icons": [
+    {
+      "id": 1,
+      "component": "CameraOutline",
+      "title": "Programmatic Autochrome",
+      "subtitle": "Image manipulation with JIMP in a React/TS - Express/TS web app.",
+      "date": "Github",
+      "link": "https://github.com/AndyDuLy/autochrome-monorepo",
+      "label": "proj-autochrome"
+    },
+    {
+      "id": 2,
+      "component": "WeatherOutline",
+      "title": "Automatic SMS Weather Updates",
+      "subtitle": "Customizable, TS serverless weather info SMS delivery with a pub/sub + cron job automation on GCP.",
+      "date": "Github",
+      "link": "https://github.com/AndyDuLy/Daily-Weather",
+      "label": "proj-daily-weather-sms"
+    },
+    {
+      "id": 3,
+      "component": "ImagesOutline",
+      "title": "Image Repository API",
+      "subtitle": "Docker containerized ME(R)N REST API with AWS S3 bucket config.",
+      "date": "Github",
+      "link": "https://github.com/AndyDuLy/image-repo-f21",
+      "label": "proj-image-repo"
+    },
+    {
+      "id": 4,
+      "component": "DirectionsOutline",
+      "title": "(Offline) SMS Google Maps Directions",
+      "subtitle": "Customizable, TS serverless google maps directions through offline SMS with Twilio on GCP.",
+      "date": "Github",
+      "link": "https://github.com/AndyDuLy/Google-Maps-Offline-SMS",
+      "label": "proj-offline-maps"
+    }
+  ],
+  "section-heading": "-- Projects",
+  "section-title": "Passion Projects",
+  "section-subtitle": "Want to explore side projects that have piqued my interests? Read on to learn more"
+}
