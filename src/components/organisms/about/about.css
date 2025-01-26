@@ -10,3 +10,29 @@
 .cta-text {
   margin-bottom: 1rem;
 }
+
+.landing-image {
+  border-radius: 36px;
+  margin: 2rem auto;
+  width: 80%;
+}
+
+.two-column-landing {
+  display: flex;
+  flex-wrap: wrap;
+  columns: 2;
+}
+
+.two-column-landing .item {
+  flex: 1 1 100%;
+}
+
+@media (min-width: 768px) {
+  .two-column-landing .item {
+    columns: 2;
+  }
+
+  .landing-image {
+    width: 30%;
+  }
+}

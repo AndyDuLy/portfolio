@@ -10,6 +10,7 @@ import SectionHeader from "../../molecules/sectionHeader";
 import "./about.css";
 import React from "react";
 import AboutDataJSON from "../../../assets/data/about.json";
+import LandingImage from "../../../assets/images/landing.jpeg";
 
 const AboutIconMap: Record<string, React.ElementType> = {
   GithubOutline,
@@ -26,11 +27,15 @@ const About: React.FC<AboutProps> = ({ children }) => {
   return (
     <div id="home">
       <Canvas variant="primary">
-        <SectionHeader
-          primaryHeading={AboutDataJSON["landing-greeting"]}
-          title={AboutDataJSON["landing-title"]}
-          subtitle={AboutDataJSON["landing-subtitle"]}
-        />
+        <div className="two-column-landing">
+          <SectionHeader
+            primaryHeading={AboutDataJSON["landing-greeting"]}
+            title={AboutDataJSON["landing-title"]}
+            subtitle={AboutDataJSON["landing-subtitle"]}
+          />
+
+          <img className="landing-image" src={LandingImage} />
+        </div>
 
         <Canvas variant="secondary">
           <div className="portfolio-links">
